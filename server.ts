@@ -325,7 +325,7 @@ function genMainContent(
           ? tag(
             "div",
             `<br>[quote]<br>`,
-            tag("b", sanitize(reply.quote.author.displayName || "")),
+            tag("b", sanitize(reply.quote.author.displayName || " ")),
             tag("i", `@${reply.quote.author.handle || "unknown"} `),
             tag(
               "a",
